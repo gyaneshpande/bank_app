@@ -39,7 +39,7 @@ public class Existing_user extends javax.swing.JFrame {
                     flag=1;
                 }
             }
-            if(flag==0)
+            if(flag == 0)
             {
                 JOptionPane.showMessageDialog(null, "Login unsuccessful");
                
@@ -137,7 +137,10 @@ public class Existing_user extends javax.swing.JFrame {
                this.setVisible(false);
                new bank_ops().setVisible(true);
            }
-           search(jTextField1.getText(),jPasswordField1.getText());
+           else
+           {
+               search(jTextField1.getText(),jPasswordField1.getText());
+           }
           
     }//GEN-LAST:event_jButton1ActionPerformed
 

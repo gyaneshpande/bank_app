@@ -22,7 +22,7 @@ public class bank_ops extends javax.swing.JFrame {
         initComponents();
     }
     double deposit, withdraw;
-    static double balance;
+    public static double balance;
     
 
     /**
@@ -174,7 +174,7 @@ public class bank_ops extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        this.setVisible(false);
+        //this.setVisible(false);
         new mobile_rechg().setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
     double send_bal()

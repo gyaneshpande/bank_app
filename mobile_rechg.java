@@ -156,9 +156,10 @@ public class mobile_rechg extends javax.swing.JFrame {
         String amount= jTextField2.getText();
         double amt=Double.parseDouble(amount);
         bank_ops b1= new bank_ops();
-        double bal=b1.send_bal();
-        bal = bal - amt;
-        if(bal < 0)
+        //double bal=b1.send_bal();
+        b1.balance = b1.balance - amt;
+        //bal = bal - amt;
+        if(b1.balance < 0)
         {
             JOptionPane.showMessageDialog(null, "Insufficient funds");
         }
@@ -168,7 +169,7 @@ public class mobile_rechg extends javax.swing.JFrame {
         }
         else
         {
-            JOptionPane.showMessageDialog(null, "Recharge of "+amount+" was successful \n Current balance "+bal);
+            JOptionPane.showMessageDialog(null, "Recharge of "+amount+" was successful \n Current balance "+b1.balance);
         }
     
     }//GEN-LAST:event_jButton1ActionPerformed
